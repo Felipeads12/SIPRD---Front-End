@@ -145,3 +145,67 @@ nav ul li a:hover, .modal-fechar:hover { color: #e63000; }
   transition: background-color 0.2s, color 0.2s;
 }
 .card button:hover { background-color: #e63000; color: #fff; }
+
+/* NEWSLETTER */
+#newsletter {
+  background-color: #222;
+  padding: 70px 30px;
+  text-align: center;
+  border-top: 2px solid #333;
+}
+#newsletter p { color: #aaa; margin-bottom: 24px; font-size: 15px; }
+#newsletter form { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+#newsletter input {
+  padding: 11px 18px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  width: 300px;
+}
+#newsletter input:focus { outline: none; border-color: #e63000; }
+#newsletter button { padding: 11px 26px; font-size: 14px; }
+
+.msg-erro   { color: #ff6b6b; font-size: 13px; margin-top: 10px; display: none; }
+.msg-sucesso { color: #4caf50; font-size: 14px; margin-top: 12px; display: none; }
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 28px 20px;
+  color: #666;
+  font-size: 13px;
+  border-top: 2px solid #333;
+}
+
+/* MODAL */
+.modal-fundo {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.modal-fundo.aberto { display: flex; }
+
+.modal-caixa {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 12px;
+  padding: 36px;
+  max-width: 500px;
+  width: 92%;
+  position: relative;
+}
+.modal-caixa h3 { font-size: 22px; margin-bottom: 12px; }
+.modal-caixa p  { color: #aaa; font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+.modal-caixa ul { padding-left: 20px; color: #ccc; font-size: 14px; line-height: 2; margin-bottom: 22px; }
+
+.modal-fechar { position: absolute; top: 14px; right: 18px; background: none; border: none; color: #aaa; font-size: 20px; cursor: pointer; }
+.modal-tel { display: inline-block; padding: 10px 22px; font-size: 14px; }
