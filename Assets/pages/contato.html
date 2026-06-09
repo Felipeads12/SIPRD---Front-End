@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Alerta Terra</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contato.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🛰️ Alerta<span>Terra</span></h1>
+    <nav>
+      <button class="menu-btn" id="menu-btn">☰</button>
+      <ul id="menu-lista">
+        <li><a href="../../index.html">Início</a></li>
+        <li><a href="../../index.html#desastres">Desastres</a></li>
+        <li><a href="../../index.html#newsletter">Alertas</a></li>
+        <li><a href="../../sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="pagina-topo">
+      <h2>Entre em <span>Contato</span></h2>
+      <p>Dúvidas, sugestões ou feedbacks? Preencha o formulário abaixo.</p>
+    </section>
+
+    <section class="secao-contato">
+
+      <form id="form-contato" class="form-contato" novalidate>
+
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" placeholder="Seu nome" />
+          <span class="erro" id="erro-nome"></span>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" />
+          <span class="erro" id="erro-email"></span>
+        </div>
+
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" placeholder="Sobre o que você quer falar?" />
+          <span class="erro" id="erro-assunto"></span>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+          <span class="erro" id="erro-mensagem"></span>
+        </div>
+
+        <button type="submit">Enviar Mensagem</button>
+
+        <p class="contato-sucesso" id="contato-sucesso"></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 <span>AlertaTerra</span> — Projeto FIAP Global Solution | ADS 1º Ano</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/contato.js"></script>
+</body>
+</html>

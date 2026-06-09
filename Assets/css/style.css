@@ -209,3 +209,40 @@ footer {
 
 .modal-fechar { position: absolute; top: 14px; right: 18px; background: none; border: none; color: #aaa; font-size: 20px; cursor: pointer; }
 .modal-tel { display: inline-block; padding: 10px 22px; font-size: 14px; }
+
+/* PÁGINAS INTERNAS — topo */
+.pagina-topo {
+  background-color: #222;
+  text-align: center;
+  padding: 65px 20px;
+  border-bottom: 2px solid #333;
+}
+.pagina-topo h2 { font-size: 30px; margin-bottom: 12px; }
+.pagina-topo h2 span { color: #e63000; }
+.pagina-topo p { color: #aaa; font-size: 16px; }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .menu-btn { display: block; }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 62px; right: 0;
+    width: 210px;
+    padding: 16px;
+    border: 1px solid #333;
+    z-index: 99;
+  }
+  nav ul.aberto { display: flex; }
+  .grid-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .grid-cards { grid-template-columns: 1fr; }
+  .hero h2 { font-size: 26px; }
+  header { padding: 14px 16px; }
+  #desastres { padding: 50px 16px; }
+}
