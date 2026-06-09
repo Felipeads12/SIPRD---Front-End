@@ -18,3 +18,45 @@ Desenvolver uma solução tecnológica capaz de:
 - Disponibilizar dicas de segurança.
 - Permitir o registro de ocorrências.
 - Facilitar o acesso a contatos de emergência.
+## 🚀 Funcionalidades
+
+### 📍 Antecipação de Desastres
+
+Permite consultar informações relacionadas a possíveis riscos ambientais em uma cidade informada pelo usuário.
+
+### 🚨 Reportar Desastre
+
+Usuários autenticados podem registrar ocorrências de desastres informando:
+
+- Tipo do desastre
+- Endereço
+- Descrição
+- Gravidade
+
+Após o registro, o sistema gera um relatório da ocorrência.
+
+### 🛡️ Dicas de Segurança
+
+O sistema disponibiliza orientações específicas para:
+
+- Enchentes
+- Tempestades
+- Deslizamentos
+- Incêndios
+- Queimadas
+- Terremotos
+
+As dicas são organizadas em:
+
+- Antes do desastre
+- Durante o desastre
+- Depois do desastre
+
+### 📞 Números de Emergência
+
+Consulta rápida aos principais órgãos de emergência:
+
+- Bombeiros (193)
+- SAMU (192)
+- Defesa Civil (199)
+- Polícia Militar (190)
