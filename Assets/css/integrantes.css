@@ -1,0 +1,78 @@
+/* integrantes.css */
+
+.secao-integrantes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1050px;
+  margin: 60px auto 80px;
+  padding: 0 30px;
+}
+
+.card-integrante {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card-integrante:hover { border-color: #e63000; transform: translateY(-3px); }
+
+.foto-wrapper {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 18px;
+  border: 3px solid #e63000;
+  background-color: #333;
+}
+
+.foto-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-integrante h3 { font-size: 16px; margin-bottom: 8px; line-height: 1.4; }
+
+.card-integrante .rm,
+.card-integrante .turma {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.links-integrante {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.links-integrante a {
+  background-color: #333;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.links-integrante a:hover {
+  background-color: #e63000;
+  color: #fff;
+  border-color: #e63000;
+}
+
+@media (max-width: 900px) {
+  .secao-integrantes { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .secao-integrantes { grid-template-columns: 1fr; padding: 0 16px; }
+}
