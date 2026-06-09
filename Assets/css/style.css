@@ -1,0 +1,211 @@
+/* ALERTA TERRA - style.css */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background-color: #1a1a1a; color: #fff; }
+
+/* HEADER */
+header {
+  background-color: #111;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #e63000;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+header h1 { font-size: 22px; }
+header h1 span, #desastres h2 span, .hero h2 span,
+#newsletter h2 span, footer span { color: #e63000; }
+
+/* NAV */
+nav ul { list-style: none; display: flex; gap: 24px; }
+nav ul li a { color: #ccc; text-decoration: none; font-size: 15px; transition: color 0.2s; }
+nav ul li a:hover, .modal-fechar:hover { color: #e63000; }
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background-color: #222;
+  text-align: center;
+  padding: 80px 20px;
+  border-bottom: 2px solid #333;
+}
+
+.hero h2 { font-size: 34px; margin-bottom: 18px; }
+.hero p { font-size: 16px; color: #aaa; max-width: 600px; margin: 0 auto 30px; line-height: 1.7; }
+
+.hero-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+.hero a, #newsletter button, .modal-tel {
+  background-color: #e63000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.hero a { padding: 13px 30px; font-size: 15px; display: inline-block; }
+.hero a:hover, #newsletter button:hover { background-color: #cc2a00; }
+
+.btn-secundario {
+  background-color: transparent !important;
+  border: 1px solid #e63000 !important;
+  color: #e63000 !important;
+}
+.btn-secundario:hover { background-color: #e63000 !important; color: #fff !important; }
+
+/* LINKS RÁPIDOS */
+.links-rapidos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #2a2a2a;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 22px 28px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  min-width: 130px;
+  text-align: center;
+  transition: border-color 0.2s, color 0.2s;
+}
+.link-card span { font-size: 28px; }
+.link-card:hover { border-color: #e63000; color: #fff; }
+
+/* DESASTRES */
+#desastres { padding: 70px 30px; }
+#desastres h2, #newsletter h2 { text-align: center; font-size: 28px; margin-bottom: 12px; }
+#newsletter h2 { font-size: 26px; }
+#desastres .subtitulo { text-align: center; color: #aaa; margin-bottom: 45px; font-size: 15px; }
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 28px 22px;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.card:hover { border-color: #e63000; transform: translateY(-3px); }
+.card .emoji { font-size: 44px; margin-bottom: 14px; }
+.card h3 { font-size: 17px; margin-bottom: 10px; }
+.card p { font-size: 13px; color: #aaa; line-height: 1.6; margin-bottom: 14px; }
+
+/* BADGES DE RISCO */
+.risco { display: inline-block; font-size: 11px; font-weight: bold; padding: 4px 12px; border-radius: 4px; color: #fff; margin-bottom: 4px; }
+.risco-alto  { background-color: #e63000; }
+.risco-medio { background-color: #e68000; }
+.risco-baixo { background-color: #0077cc; }
+
+.card button {
+  display: block;
+  margin: 12px auto 0;
+  background: none;
+  border: 1px solid #e63000;
+  color: #e63000;
+  padding: 7px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.card button:hover { background-color: #e63000; color: #fff; }
+
+/* NEWSLETTER */
+#newsletter {
+  background-color: #222;
+  padding: 70px 30px;
+  text-align: center;
+  border-top: 2px solid #333;
+}
+#newsletter p { color: #aaa; margin-bottom: 24px; font-size: 15px; }
+#newsletter form { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+
+#newsletter input {
+  padding: 11px 18px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  width: 300px;
+}
+#newsletter input:focus { outline: none; border-color: #e63000; }
+#newsletter button { padding: 11px 26px; font-size: 14px; }
+
+.msg-erro   { color: #ff6b6b; font-size: 13px; margin-top: 10px; display: none; }
+.msg-sucesso { color: #4caf50; font-size: 14px; margin-top: 12px; display: none; }
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 28px 20px;
+  color: #666;
+  font-size: 13px;
+  border-top: 2px solid #333;
+}
+
+/* MODAL */
+.modal-fundo {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.modal-fundo.aberto { display: flex; }
+
+.modal-caixa {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 12px;
+  padding: 36px;
+  max-width: 500px;
+  width: 92%;
+  position: relative;
+}
+.modal-caixa h3 { font-size: 22px; margin-bottom: 12px; }
+.modal-caixa p  { color: #aaa; font-size: 14px; line-height: 1.7; margin-bottom: 16px; }
+.modal-caixa ul { padding-left: 20px; color: #ccc; font-size: 14px; line-height: 2; margin-bottom: 22px; }
+
+.modal-fechar { position: absolute; top: 14px; right: 18px; background: none; border: none; color: #aaa; font-size: 20px; cursor: pointer; }
+.modal-tel { display: inline-block; padding: 10px 22px; font-size: 14px; }
