@@ -60,3 +60,47 @@ Consulta rápida aos principais órgãos de emergência:
 - SAMU (192)
 - Defesa Civil (199)
 - Polícia Militar (190)
+
+## 💻 Tecnologias Utilizadas
+
+### Front-End
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Back-End
+
+- Java
+- Programação Orientada a Objetos
+- Python
+
+### Banco de Dados
+
+- Oracle SQL Developer Data Modeler
+
+### Inteligência Artificial
+
+- IBM Watson Assistant
+
+## 📚 Contexto do Problema
+
+Os desastres naturais afetam milhares de pessoas todos os anos, causando impactos sociais, econômicos e ambientais.
+
+Muitas vezes a população não possui acesso rápido a informações confiáveis ou orientações adequadas para lidar com essas situações.
+
+O SIPRD foi desenvolvido para auxiliar na conscientização, prevenção e resposta a esses eventos, promovendo maior segurança e preparação da população.
+
+## 👨‍💻 Equipe
+
+ - Felipe Passos
+    RM569411
+ - Gabriel Canevari
+    RM570730
+ - Lucas Almeida Oliveira
+    RM572499
+ - Katerine penteado hildebrand
+    RM569809 
+
+
+## Projeto acadêmico desenvolvido para a FIAP.
